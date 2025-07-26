@@ -1,116 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piel de Seda</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff9f8;
-      color: #333;
-    }
-    header {
-      background-color: #ffe4e1;
-      padding: 2.5rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-    }
-    .button {
-      display: inline-block;
-      background-color: #ff69b4;
-      color: white;
-      padding: 1rem 2rem;
-      margin-top: 1.5rem;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .product-card {
-      background: white;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 220px;
-    }
-    .product-card img {
-      border-radius: 8px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 0.5rem;
-    }
-    .product-card .actions {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-    .product-card .actions a {
-      background-color: #ff69b4;
-      color: white;
-      padding: 0.5rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .banner img {
-      width: 100%;
-      border-radius: 12px;
-      margin: 2rem 0;
-    }
-    .ads {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .ads img {
-      width: 300px;
-      border-radius: 12px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: '✔️';
-      margin-right: 0.5rem;
-      color: #ff69b4;
-    }
-    blockquote {
-      font-style: italic;
-      background-color: #fff0f5;
-      padding: 1rem;
-      border-left: 4px solid #ff69b4;
-      margin: 1rem 0;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 1rem;
-      background-color: #ffe4e1;
-    }
+    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background-color: #fff9f8; color: #333; }
+    header { background-color: #ffe4e1; padding: 2.5rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; }
+    .button { display: inline-block; background-color: #ff69b4; color: white; padding: 1rem 2rem; margin-top: 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; }
+    .section { padding: 2rem; max-width: 1000px; margin: auto; }
+    .products { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .product-card { background: white; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; width: 220px; }
+    .product-card img { border-radius: 8px; height: 150px; object-fit: cover; margin-bottom: 0.5rem; }
+    .product-card .actions { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+    .product-card .actions a { background-color: #ff69b4; color: white; padding: 0.5rem; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    .banner img { width: 100%; border-radius: 12px; margin: 2rem 0; }
+    .ads { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .ads img { width: 300px; border-radius: 12px; }
+    ul { list-style: none; padding-left: 0; }
+    ul li::before { content: '✔️'; margin-right: 0.5rem; color: #ff69b4; }
+    blockquote { font-style: italic; background-color: #fff0f5; padding: 1rem; border-left: 4px solid #ff69b4; margin: 1rem 0; }
+    footer { text-align: center; font-size: 0.9rem; padding: 1rem; background-color: #ffe4e1; }
   </style>
 </head>
 <body>
@@ -120,11 +34,15 @@
     <a class="button" href="https://wa.me/573207319144" target="_blank">Haz tu pedido por WhatsApp</a>
   </header>
 
+  <section class="section banner">
+    <img src="images/banner1.png" alt="Banner cuidado íntimo">
+  </section>
+
   <section class="section">
     <h2>Productos Destacados</h2>
     <div class="products">
       <div class="product-card">
-        <img src="truly1.jpeg" alt="Soft Serve y Coco Cloud">
+        <img src="images/softserve.jpeg" alt="Soft Serve y Coco Cloud">
         <p>Soft Serve & Coco Cloud - Truly</p>
         <div class="actions">
           <a href="#">Agregar al carrito</a>
@@ -132,7 +50,7 @@
         </div>
       </div>
       <div class="product-card">
-        <img src="truly2.jpeg" alt="Unicorn Fruit y Glazed Donut">
+        <img src="images/unicornfruit.jpeg" alt="Unicorn Fruit y Glazed Donut">
         <p>Unicorn Fruit & Glazed Donut - Truly</p>
         <div class="actions">
           <a href="#">Agregar al carrito</a>
@@ -140,13 +58,31 @@
         </div>
       </div>
       <div class="product-card">
-        <img src="mammouth1.jpeg" alt="Mammouth Crema Voluminizante">
+        <img src="images/mammouth1.jpeg" alt="Mammouth Crema Voluminizante">
         <p>Mammouth Crema Voluminizante</p>
         <div class="actions">
           <a href="#">Agregar al carrito</a>
           <a href="https://wa.me/573207319144?text=Hola! Quiero el producto Mammouth Crema Voluminizante" target="_blank">Comprar por WhatsApp</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Publicidad Destacada - 2 Minute</h2>
+    <div class="ads">
+      <img src="images/ads_2min_1.jpeg" alt="Modo de uso 2 Minute">
+      <img src="images/ads_2min_2.jpeg" alt="Resultado instantáneo">
+      <img src="images/ads_2min_3.jpeg" alt="Reductor de arrugas">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Publicidad Extra - Mammouth</h2>
+    <div class="ads">
+      <img src="images/mammouth2.jpeg" alt="Mammouth 1">
+      <img src="images/mammouth3.jpeg" alt="Mammouth 2">
+      <img src="images/mammouth4.jpeg" alt="Mammouth 3">
     </div>
   </section>
 
@@ -159,7 +95,6 @@
       <li>Pago online o contraentrega (el cliente paga el envío)</li>
       <li>Envíos a toda Colombia</li>
     </ul>
-    <a class="button" href="#">Pagar en línea (próximamente)</a>
   </section>
 
   <section class="section">
